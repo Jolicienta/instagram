@@ -32,10 +32,6 @@ function add(){
 		}
 }*/
 
-WordCount.chars("input", function(chars) {
-  console.log("Number of characters: " + chars);
-});
-
 	//nodos de texto del textarea
 	var textNewComment = document.createTextNode(comments);
 	var contenedorElemento = document.createElement('p');

@@ -1,5 +1,6 @@
 /* Reseteo márgenes browser y color body */
 /*font-family: 'Didact Gothic', sans-serif;*/
+/*color: #1DA1F2;*/
 
 body {
 	margin: 0 auto;
@@ -12,21 +13,69 @@ body {
 header {
 	background-color: #FFF;
 	height: 60px;
+	width: 100%;
+	border-bottom: 2px solid #C9CED2;
+	position: fixed;
 }
 
-header #twitter-logo {
+header nav {
+	float: left;
+}
+
+header ul {
+	margin: 0 auto;
+}
+
+header li {
+	float: left;
+	padding: 0 10px;
+	list-style: none;
+	line-height: 60px;
+	margin-top: 0;
+}
+
+header li:hover {
+	border-bottom: 2px solid #1DA1F2;
+}
+
+header li a {
+	color: #6B696C;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+header li:hover > a {
+	color: #1DA1F2;
+}
+
+header li .fa {
+	font-size: 19px;
+	margin-right: 5px;
+}
+
+header .fa-twitter {
+	font-size: 35px;
+	color: #00CDFF;
+	float: left;
+	margin-left: 42%;
+	margin-top: 10px;
+}
+
+header a #twitter-logo {
 	background-image: url(../img/Twitter-logo.png);
 	background-size: cover;
-	width: 120px;
-	height: 40px;
+	width: 129px;
+	height: 35px;
 	z-index: 100;
 	margin: 0 auto;
+	margin-top: 5px;
 	position: relative;
 }
 
 .reto-codigo {
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 70px;
 	width: 40%;
 	float: left;
 	margin-left: 9%;
@@ -43,7 +92,7 @@ header #twitter-logo {
 	background-color: #fff;
 	border-radius: 5px;
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 70px;
 	margin-left: 2%;
 	width: 40%;
 	height: 220px;
@@ -105,12 +154,12 @@ textarea {
 /* Estilos contenedor comentarios */
  #cont {
 	width: 90%;
-	margin: 0 auto;
 	color: #4E4D53;
 	text-align: left;
 	display: block;
-	margin-bottom: 50px;
-	margin-top: 300px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
 }
 
 #cont div {
