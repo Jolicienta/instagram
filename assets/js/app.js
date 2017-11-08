@@ -13,29 +13,39 @@ function add(){
 
 	//validar que textarea tenga un msje
 	if(comments.length == 0 || comments == null) {
-		alert('Debes ingresar un mensaje');
+		alert('!Vamos, cuentanos algo!');
 		return false;
 	}
 	//crear checkbox
-	var chck = document.createElement('input');
-	chck.type = 'checkbox';
-	//creamos icono de corazon
-	var heart = document.createElement('i');
-	heart.classList.add('fa', 'fa-heart', 'heart');
-	//creamos icono de basura
-	var trash = document.createElement('i');
-	trash.classList.add('fa', 'fa-trash', 'trash');
+	var textbox = document.createElement('text');
+	textbox.type = 'text';
+
+	//crear contador de palabras
+	/*function wordCount(){
+		var words = document.getElementById('contador').value;
+		var count = words.length();
+
+		if ( count === 0 || count === ""){
+			return ("140");
+		} else ( 1 >= count >= 139 ) {
+			return (count);
+		}
+}*/
+
+WordCount.chars("input", function(chars) {
+  console.log("Number of characters: " + chars);
+});
+
 	//nodos de texto del textarea
 	var textNewComment = document.createTextNode(comments);
-
 	var contenedorElemento = document.createElement('p');
-	contenedorElemento.appendChild(textNewComment);
-	newComments.appendChild(chck);
-	newComments.appendChild(trash);
-	newComments.appendChild(heart);
-	newComments.appendChild(contenedorElemento);
 
+	contenedorElemento.appendChild(textNewComment);
+	newComments.appendChild(textbox);
+	newComments.appendChild(contenedorElemento);
 	cont.appendChild(newComments);
+
+
 
 
 

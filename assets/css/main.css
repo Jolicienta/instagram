@@ -1,118 +1,133 @@
 /* Reseteo márgenes browser y color body */
+/*font-family: 'Didact Gothic', sans-serif;*/
+
 body {
 	margin: 0 auto;
-	background-color: #FAFAFA;
-}
-.container {
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 14px;
-	padding-right: 14px;
+	background-color: #E6ECF0;
+	font-family: 'Didact Gothic', sans-serif;
+	color: #000;
+	font-size: 14px;
 }
 
-/* Estilos generales */
-
-.center {
-	text-align: center;
-}
-
-/* Estilos Header */
 header {
 	background-color: #FFF;
-	text-align: center;
+	height: 60px;
 }
 
-header div img {
-	width: 10em;
-}
-
-/* Estilos imágen y su contenedor */
-
-.img {
-	background-image: url(../img/photo.jpg);
+header #twitter-logo {
+	background-image: url(../img/Twitter-logo.png);
 	background-size: cover;
-	width: 22em;
-	height: 22em;
-	margin: 2em auto;
-	border: 5em solid #FFF;
-	box-shadow: 0 0 0.25em 0 rgba(50, 50, 50, 0.2);
+	width: 120px;
+	height: 40px;
+	z-index: 100;
+	margin: 0 auto;
+	position: relative;
+}
+
+.reto-codigo {
+	text-align: left;
+	margin-top: 20px;
+	width: 40%;
+	float: left;
+	margin-left: 9%;
+}
+
+.reto-codigo .container {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 60px 30px;
+	line-height: 30px;
+}
+
+.center {
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 2%;
+	width: 40%;
+	height: 220px;
+	float: left;
+}
+
+.center .container {
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px 10px;
 }
 
 textarea {
-	width: 70%;
-	height: 4em;
+	width: 98%;
+	height: 80px;
 	color: #4E4D53;
-	font-size: 15px;
-	padding: 1em;
-	border-radius: 1em;
+	font-size: 14px;
+	padding-top: 10px;
+	border-radius: 5px;
 	border: none;
 	margin: 0 auto;
 }
 
-/* Estilos botón agregar */
-#btn {
-	background-color: #66AEC7;
-	border: 0px;
-	cursor: pointer;
-	text-align: center;
-	margin: 3em auto;
-	width: 130px;
-	height: 30px;
-	display: block;
-	color: #FFF;
+.center hr {
+	border: 1.5px solid #1DA1F2;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-#btn:hover {
-	background-color: #5590A6;
+/* Estilos botón agregar */
+#btn {
+	background-color: #1DA1F2;
+	border: 0px;
+	border-radius: 7px;
+	cursor: pointer;
+	text-align: center;
+	margin:  auto;
+	line-height: 35px;
+	width: 100px;
+	display: block;
+	color: #FFF;
+	float: left;
+	margin-top: 15px;
 }
 
 #btn:focus, textarea:focus{
 	outline: none;
 }
 
+#contador {
+	color: #1DA1F2;
+	font-weight: bold;
+	font-size: 16px;
+	float: right;
+	margin-top: 45px;
+}
+
 /* Estilos contenedor comentarios */
-#cont {
-	border-radius: 0.4em;
-	width: 51em;
+ #cont {
+	width: 90%;
 	margin: 0 auto;
 	color: #4E4D53;
 	text-align: left;
-	margin-bottom: 6em;
-}
-
-#cont span {
-	margin-left: 1em;
+	display: block;
+	margin-bottom: 50px;
+	margin-top: 300px;
 }
 
 #cont div {
-	padding: 1em 0.5em;
-	margin-bottom: 2em;
-	outline: 0.1em solid #E5E3F2;
+	padding: 20px 10px;
+	margin-bottom: 30px;
+	outline: 1.5px solid #E5E3F2;
 	background-color: #FFF;
+	border-radius: 5px;
 }
 
-.heart, .trash {
-	margin:1em;
-	float: right;
-}
-
-.trash:hover {
-	color: #1DA1F2;
-	cursor: pointer;
-}
-
-.strike-out {
-	text-decoration: line-through;
-	color: #1DA1F2;
-}
-
-.red {
-	color: #FC1E26;
-	cursor: pointer;
+#cont #time {
+	padding: 20px 10px;
+	margin-bottom: 30px;
+	color: black;
 }
 
 p {
 	display: inline-block;
-	margin-left: 0.5em;
+	margin-left: 10px;
 }

@@ -3,35 +3,36 @@
 <head>
 	<meta name = "viewport" content="width=device-width">
 	<meta charset="UTF-8">
-	<title>Instagram</title>
+	<title>Twitter</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://use.fontawesome.com/7873633050.js"></script>
 </head>
 <body>
 <!-- Sección header -->
 	<header>
-		<div class="container">
-				<img src="assets/img/instagram.png" alt="Instagram">
-		</div>
+			<div id="twitter-logo"></div>
 	</header>
-	<!-- Sección foto -->
-	<section>
-		<div class="container center">
-			<div class="img"></div>
-		</div>
-	</section>
 
+<section class="reto-codigo">
+	<div class="container">
+		<h3>Reto de Código</h3>
+		Hola :) <br>Soy Natalia Campos, una front-end developer
+	</div>
+</section>
 	<!-- Sección textarea, botón y contenedor mensajes -->
 	<section class="center">
 		<div class="container">
-			<textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
-			<button type="button" id="btn" onclick="add()"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</button>
-			<!-- contenedor comentarios -->
-			<div id="cont"></div>
+			<textarea type="text" id="comment" placeholder="¿Qué está pasando?"></textarea>
+      <hr>
+			<button type="button" id="btn" onclick="add()" >TWEET</button>
+			<div id="contador" src="wourdcount"></div>	
 		</div>
 	</section>
+	<!-- contenedor comentarios -->
+		<div id="cont">
+		</div>
 
 	<!-- Script Files -->
-	<script src="https://use.fontawesome.com/7873633050.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
